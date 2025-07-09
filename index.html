@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Mohan Murali</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Mohan Murali</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile-->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="thumbnails/Untitled design.png" alt="Mohan Murali profile Pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mohan Murali</h1>
+            <p class="section__text__p2">Programmer </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('.')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+            </div>
+            <div id="socials-container">
+                <img src="thumbnails/3.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/mohan-murali-miriyala-2256a632a/'" />
+                <img src="thumbnails/github-mark.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/'" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About me-->
+    <section id="about">
+        <p class="section__text__p1"> Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_-pic-container">
+                <img src="thumbnails/9.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="thumbnails/exp.png" alt="Experince icon" class="icon" />
+                        <h3>Experince</h3>
+                        <p>2 years <br /></p>
+                    </div>
+                    <div class="details-container">
+                        <img src="thumbnails/e.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Tech Degree <br />in Information Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello! I'm a passionate and curious developer with a strong foundation in core programming
+                        languages like <strong>Java, Python, and C++</strong>, along with hands-on experience in
+                        front-end technologies including <strong>HTML, CSS</strong>. I enjoy creating
+                        practical, problem-solving applications and blending logical thinking with creative design.
+                    </p>
+                    <p>
+                        Recently, I built a Java-based desktop application that intelligently plays different
+                        notification sounds based on the content or sender of incoming emails — combining my backend
+                        logic skills with user-focused experience design. Projects like this have helped me bridge the
+                        gap between technical function and real-world user needs.
+                    </p>
+                    <p>
+                        I am also skilled in design tools such as <strong>Canva</strong> and <strong>Adobe
+                            Photoshop</strong>, which I use to enhance the visual aspects of my work, whether for
+                        branding, UI design, or creating clean and appealing project assets.
+                    </p>
+                    <p>
+                        I constantly strive to learn and experiment with new tools and frameworks, aiming to become a
+                        well-rounded developer who not only writes code but also builds meaningful, user-centered
+                        solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="thumbnails/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <!--Web Technologies -->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Web Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Java Script</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Design Tools -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Design Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Canva</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Adobe Photoshop</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="thumbnails/check.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>SpringBoot</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+
+                    </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Down Arrow (Placed Separately Below the Box) -->
+            <div class="arrow-container">
+                <img src="thumbnails/arrow.png" alt="Arrow icon" class="icon arrow"
+                    onclick="location.href='./#experience'" />
+            </div>
+
+
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="experience-details-container">
+            <!-- Project One -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="thumbnails/sm.jpg" alt="project 1" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">NotiChord</h2>
+                <div class="btn-container">
+                    <a href="https://github.com/Mohan171820/Notichord.git" class="btn btn-color-2 project-btn"
+                        target="_blank">Github</a>
+                </div>
+            </div>
+
+            <!-- Project Two -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="thumbnails/rr.png" alt="project 2" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Rock-Paper-Scissors-game</h2>
+                <div class="btn-container">
+                    <a href="https://github.com/Mohan171820/Rock-Paper-Scissors-game.git"
+                        class="btn btn-color-2 project-btn" target="_blank">Github</a>
+                </div>
+            </div>
+
+            <!-- Project Three-->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="thumbnails/sms.png" alt="project 2" class="project-img" />
+                </div>
+                <h2 class="experience-sub-title project-title">Student Management System</h2>
+                <div class="btn-container">
+                    <a href="https://github.com/Mohan171820/StudentManagementSystem.git"
+                        class="btn btn-color-2 project-btn" target="_blank">Github</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--contact-->
+    <section id="Contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="thumbnails/mail.png" alt="mail icon" class="icon contact-icon email-icon" />
+                <p><a href="">miriryalamoahnmurali74@gamil.com</a></p>
+
+            </div>
+            <div class="contact-info-container">
+                <img src="thumbnails/3.png" alt="Linkedin icon" class="icon contact-icon" />
+                <p><a href="">Linkedin.com</a></p>
+            </div>
+        </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Mohan Murali. All Rights Reserved.</p>
+    </footer>
+
+    <script src="first.js"></script>
+</body>
+
+</html>
